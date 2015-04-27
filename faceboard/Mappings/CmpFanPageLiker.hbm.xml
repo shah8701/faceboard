@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="CmpFanPageLiker" table="CmpFanPageLiker"  lazy="false">
+    <id name="AutoId" column="AutoId" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="CampaignName">
+      <column name="CampaignName"  />
+    </property>
+    <property name="CampaignProcess">
+      <column name="CampaignProcess"></column>
+    </property>
+    <property name="AccountsFile">
+      <column name="AccountsFile"></column>
+    </property>
+    <property name="FanPageURLsFile">
+      <column name="FanPageURLsFile"></column>
+    </property>
+    <property name="FanPageMessageFile">
+      <column name="FanPageMessageFile"></column>
+    </property>
+    <property name="FanPageCommentFile">
+      <column name="FanPageCommentFile"></column>
+    </property>
+
+  </class>
+</hibernate-mapping>

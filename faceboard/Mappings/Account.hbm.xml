@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="Account" table="Account"  lazy="false">
+    <id name="UserName" type="string" column="UserName">
+      <!--<generator class="native"/>-->
+    </id>
+    <property name="Password">
+      <column name="Password"  />
+    </property>
+    <property name="ProxyAddress">
+      <column name="ProxyAddress"></column>
+    </property>
+    <property name="ProxyPort">
+      <column name="ProxyPort"></column>
+    </property>
+    <property name="ProxyUserName">
+      <column name="ProxyUserName"></column>
+    </property>
+    <property name="ProxyPassword">
+      <column name="ProxyPassword"></column>
+    </property>
+    
+  </class>
+</hibernate-mapping>

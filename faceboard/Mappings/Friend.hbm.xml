@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="Friend" table="Friend"  lazy="false">
+    <id name="Id" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="UserName" column="UserName"  />
+    <property name="FriendId" column="FriendId"  />
+    <property name="FriendProfileURL" column="FriendProfileURL"  />
+    <property name="FriendName" column="FriendName"  />
+    
+
+  </class>
+</hibernate-mapping>

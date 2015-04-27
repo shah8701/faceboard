@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="Message" table="Message"  lazy="false">
+    <id name="Id" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+
+    <property name="UserId">
+      <column name="UserId"  />
+    </property>
+    <property name="UserName">
+      <column name="UserName"  />
+    </property>
+    
+    <property name="MessagingReadParticipantsId">
+      <column name="MessagingReadParticipantsId"  />
+    </property>
+    <property name="MessagingReadParticipants">
+      <column name="MessagingReadParticipants"  />
+    </property>
+    <property name="MsgFriendId">
+      <column name="MsgFriendId"  />
+    </property>
+    <property name="MsgSnippedId">
+      <column name="MsgSnippedId"  />
+    </property>
+    <property name="MsgSenderName">
+      <column name="MsgSenderName"  />
+    </property>
+    <property name="MessageText">
+      <column name="MessageText"  />
+    </property>
+    <property name="MsgDate">
+      <column name="MsgDate"  />
+    </property>
+    <property name="MessageStatus">
+      <column name="MessageStatus"  />
+    </property>
+
+  </class>
+</hibernate-mapping>

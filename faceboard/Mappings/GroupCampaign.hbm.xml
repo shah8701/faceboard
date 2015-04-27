@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="GroupCampaign" table="GroupCampaign"  lazy="false">
+    <id name="Id" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="GroupCampaignName" column="GroupCampaignName"  />
+    <property name="Account" column="Account"  />
+    <property name="PicFilePath" column="PicFilePath"  />
+    <property name="VideoFilePath" column="VideoFilePath"  />
+    <property name="MessageFilePath" column="MessageFilePath"  />
+    <property name="ScheduleTime" column="ScheduleTime"  />
+    <property name="CmpStartTime" column="CmpStartTime"  />
+    <property name="Accomplish" column="Accomplish"  />
+    <property name="NoOfMessage" column="NoOfMessage"  />
+    <property name="MessageMode" column="MessageMode"  />
+    <property name="MessageType" column="MessageType"  />
+    <property name="TextMessage" column="TextMessage"  />
+    <property name="Module" column="Module"  />
+   
+  </class>
+</hibernate-mapping>

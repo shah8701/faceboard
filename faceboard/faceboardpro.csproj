@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A346C77B-7D7C-4023-A3BC-2589C79D100B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>faceboardpro</RootNamespace>
+    <AssemblyName>faceboardpro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>Libs\32 Bit dlls\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="APINew">
+      <HintPath>Libs\32 Bit dlls\APINew.dll</HintPath>
+    </Reference>
+    <Reference Include="BypassCaptchaForZennoPoster">
+      <HintPath>Libs\32 Bit dlls\BypassCaptchaForZennoPoster.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet2">
+      <HintPath>Libs\32 Bit dlls\ChilkatDotNet2.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>Libs\32 Bit dlls\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.Contrib">
+      <HintPath>Libs\32 Bit dlls\Dapper.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\32 Bit dlls\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\32 Bit dlls\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.65.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\32 Bit dlls\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>Libs\32 Bit dlls\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Account.cs" />
+    <Compile Include="Domain\Campaign.cs" />
+    <Compile Include="Domain\Captcha.cs" />
+    <Compile Include="Domain\CmpFanPageLiker.cs" />
+    <Compile Include="Domain\Email.cs" />
+    <Compile Include="Domain\Event.cs" />
+    <Compile Include="Domain\FanPageData.cs" />
+    <Compile Include="Domain\FanPagePost.cs" />
+    <Compile Include="Domain\FanPageStatus.cs" />
+    <Compile Include="Domain\Friend.cs" />
+    <Compile Include="Domain\Group.cs" />
+    <Compile Include="Domain\GroupCampaign.cs" />
+    <Compile Include="Domain\GroupCompaignReport.cs" />
+    <Compile Include="Domain\GroupRequestUnique.cs" />
+    <Compile Include="Domain\IAccount.cs" />
+    <Compile Include="Domain\ICampaign.cs" />
+    <Compile Include="Domain\ICaptcha.cs" />
+    <Compile Include="Domain\ICmpFanPageLiker.cs" />
+    <Compile Include="Domain\IEmail.cs" />
+    <Compile Include="Domain\IEvent.cs" />
+    <Compile Include="Domain\IFanPageData.cs" />
+    <Compile Include="Domain\IFanPagePost.cs" />
+    <Compile Include="Domain\IFanPageStatus.cs" />
+    <Compile Include="Domain\IFriend.cs" />
+    <Compile Include="Domain\IGroup.cs" />
+    <Compile Include="Domain\IGroupCampaign.cs" />
+    <Compile Include="Domain\IGroupCompaignReport.cs" />
+    <Compile Include="Domain\IMessage.cs" />
+    <Compile Include="Domain\IPage.cs" />
+    <Compile Include="Domain\IPhoto.cs" />
+    <Compile Include="Domain\ISchFanPageLiker.cs" />
+    <Compile Include="Domain\ISetting.cs" />
+    <Compile Include="Domain\Message.cs" />
+    <Compile Include="Domain\Page.cs" />
+    <Compile Include="Domain\Photo.cs" />
+    <Compile Include="Domain\SchFanPageLiker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Setting.cs" />
+    <Compile Include="Domain\WallPosterUnique.cs" />
+    <Compile Include="faceboardpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faceboardpro.Designer.cs">
+      <DependentUpon>faceboardpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\SessionFactory.cs" />
+    <Compile Include="Model\AccountRepository.cs" />
+    <Compile Include="Model\CampaignRepository.cs" />
+    <Compile Include="Model\CaptchaRepository.cs" />
+    <Compile Include="Model\CmpFanPageLikerRepository.cs" />
+    <Compile Include="Model\EmailRepository.cs" />
+    <Compile Include="Model\EventRepository.cs" />
+    <Compile Include="Model\FanPageDataRepository.cs" />
+    <Compile Include="Model\FanPagePostRepository.cs" />
+    <Compile Include="Model\FanPageStatusRepository.cs" />
+    <Compile Include="Model\FriendRepository.cs" />
+    <Compile Include="Model\GroupCampaignManagerRepository.cs" />
+    <Compile Include="Model\GroupCompaignReportRepository.cs" />
+    <Compile Include="Model\GroupRepository.cs" />
+    <Compile Include="Model\GroupRequestUniqueRepository.cs" />
+    <Compile Include="Domain\IGroupRequestUnique.cs" />
+    <Compile Include="Model\MessageRepository.cs" />
+    <Compile Include="Model\PageRepository.cs" />
+    <Compile Include="Model\PhotoRepository.cs" />
+    <Compile Include="Model\SchFanPageLikerRepository.cs" />
+    <Compile Include="Model\SettingRepository.cs" />
+    <Compile Include="Model\WallPosterUniqueRepository.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="faceboardpro.resx">
+      <DependentUpon>faceboardpro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Message.hbm.xml" />
+    <EmbeddedResource Include="Mappings\SchFanPageLiker.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Accounts\Accounts.csproj">
+      <Project>{10BE8BD6-FB6A-40AC-894C-E5ED32C31660}</Project>
+      <Name>Accounts</Name>
+    </ProjectReference>
+    <ProjectReference Include="BaseLibFB\BaseLibFB.csproj">
+      <Project>{B1685393-B5A1-4304-8EEC-0DB35BB5E7AA}</Project>
+      <Name>BaseLibFB</Name>
+    </ProjectReference>
+    <ProjectReference Include="BaseLib\BaseLib.csproj">
+      <Project>{06DC6ACC-8C2E-4244-ABCF-5CCAF0708747}</Project>
+      <Name>BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="Campaigns\Campaigns.csproj">
+      <Project>{BDA75794-7FF6-40FC-A8C1-3AC454635B09}</Project>
+      <Name>Campaigns</Name>
+    </ProjectReference>
+    <ProjectReference Include="Captchas\Captchas.csproj">
+      <Project>{E3261A30-38ED-4310-9829-C43243F310AE}</Project>
+      <Name>Captchas</Name>
+    </ProjectReference>
+    <ProjectReference Include="Events\Events.csproj">
+      <Project>{B2663D3F-7B40-4D62-BC71-5A4A243FB394}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="Friends\Friends.csproj">
+      <Project>{FF83C3D4-0AFC-4E1B-A2A6-9DE728AC567F}</Project>
+      <Name>Friends</Name>
+    </ProjectReference>
+    <ProjectReference Include="Groups\Groups.csproj">
+      <Project>{27C74662-C007-46AF-AFDB-0512C9C438E6}</Project>
+      <Name>Groups</Name>
+    </ProjectReference>
+    <ProjectReference Include="Messages\Messages.csproj">
+      <Project>{DDBBA3D8-4681-46B6-BB7E-06C5506AE4AD}</Project>
+      <Name>Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pages\Pages.csproj">
+      <Project>{4DC30FF4-FCE5-49E7-92B6-3CDE95A7EF81}</Project>
+      <Name>Pages</Name>
+    </ProjectReference>
+    <ProjectReference Include="Photos\Photos.csproj">
+      <Project>{7D9796AB-1B8F-455C-B877-D0E2FEE3F8B5}</Project>
+      <Name>Photos</Name>
+    </ProjectReference>
+    <ProjectReference Include="Proxies\Proxies.csproj">
+      <Project>{51CC42BF-6E64-4AEA-A6FC-F56B7F04EF3B}</Project>
+      <Name>Proxies</Name>
+    </ProjectReference>
+    <ProjectReference Include="Scheduler\Scheduler.csproj">
+      <Project>{68027D3E-861F-46E0-878B-E8346682F18A}</Project>
+      <Name>Scheduler</Name>
+    </ProjectReference>
+    <ProjectReference Include="Scrapers\Scrapers.csproj">
+      <Project>{4DA4BA57-F95A-408B-AF53-6FB2E8B82966}</Project>
+      <Name>Scrapers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Search\Search.csproj">
+      <Project>{6D117798-33AF-4350-9F1F-977809ED620C}</Project>
+      <Name>Search</Name>
+    </ProjectReference>
+    <ProjectReference Include="WallPoster\WallPoster.csproj">
+      <Project>{E7967FBE-9812-442A-9284-CAEEB03F3A4E}</Project>
+      <Name>WallPoster</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\msg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\news_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captcha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groups.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proxies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\events.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spider_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campaigns.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scheduler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="log4net.xml" />
+    <Content Include="Mappings\GroupRequestUnique.hbm.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Mappings\WallPosterUnique.hbm.xml" />
+    <None Include="Resources\faceboard-logo.png" />
+    <None Include="Resources\PVA-Banner166x88.gif" />
+    <None Include="Resources\fb wall.png" />
+    <None Include="Resources\search-16.png" />
+    <EmbeddedResource Include="Mappings\GroupCompaignReport.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\GroupCampaign.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Captcha.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\CmpFanPageLiker.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Email.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\FanPageData.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\FanPagePost.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\FanPageStatus.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Setting.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mappings\Account.hbm.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Mappings\Campaign.hbm.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mappings\Event.hbm.xml" />
+    <None Include="Mappings\Friend.hbm.xml" />
+    <None Include="Mappings\Group.hbm.xml" />
+    <None Include="Mappings\Page.hbm.xml" />
+    <None Include="Mappings\Photo.hbm.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

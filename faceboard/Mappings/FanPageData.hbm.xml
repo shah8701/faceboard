@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="FanPageData" table="FanPageData"  lazy="false">
+    <id name="AutoId" column="AutoId" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Id" column="Id"  />
+    <property name="Name" column="Name"  />
+    <property name="FirstName" column="FirstName"  />
+    <property name="MiddleName" column="MiddleName"  />
+    <property name="LastName" column="LastName"  />
+    <property name="Link" column="Link"  />
+    <property name="Gender" column="Gender"  />
+    <property name="Locale" column="Locale"  />
+    <property name="ProfileStatus" column="ProfileStatus"  />
+    <property name="Url" column="Url"  />
+    <property name="ShowUser" column="ShowUser"  />
+
+  </class>
+</hibernate-mapping>

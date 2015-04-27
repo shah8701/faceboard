@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="SchFanPageLiker" table="SchFanPageLiker"  lazy="false">
+    <id name="AutoId" column="AutoId" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="SchedulerName">
+      <column name="SchedulerName"  />
+    </property>
+    <property name="SchedulerProcess">
+      <column name="SchedulerProcess"></column>
+    </property>
+    <property name="AccountsFile">
+      <column name="AccountsFile"></column>
+    </property>
+    <property name="FanPageURLsFile">
+      <column name="FanPageURLsFile"></column>
+    </property>
+    <property name="FanPageMessageFile">
+      <column name="FanPageMessageFile"></column>
+    </property>
+    <property name="FanPageCommentsFile">
+      <column name="FanPageCommentsFile"></column>
+    </property>
+
+    <property name="StartDate">
+      <column name="StartDate"></column>
+    </property>
+
+    <property name="EndDate">
+      <column name="EndDate"></column>
+    </property>
+
+    <property name="StartTime">
+      <column name="StartTime"></column>
+    </property>
+
+    <property name="EndTime">
+      <column name="EndTime"></column>
+    </property>
+
+    <property name="Status">
+      <column name="Status"></column>
+    </property>
+
+  </class>
+</hibernate-mapping>

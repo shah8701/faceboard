@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="WallPosterUnique" table="WallPosterUnique"  lazy="false">
+    <id name="ID" type="" column="ID" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+    <property name="Username">
+      <column name="Username"  />
+    </property>
+    <property name="FriendID">
+      <column name="FriendID"></column>
+    </property>
+    <property name="MessageType">
+      <column name="MessageType"></column>
+    </property>
+    <property name="Status">
+      <column name="Status"></column>
+    </property>
+  </class>
+</hibernate-mapping>

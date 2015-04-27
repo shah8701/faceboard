@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="GroupRequestUnique" table="Event"  lazy="false">
+    <id name="ID" column="ID" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="CampaignName" column="CampaignName"  />
+    <property name="URL" column="URL"  />
+    <property name="Account" column="Account"  />
+    <property name="Status" column="Status"  />
+  </class>
+</hibernate-mapping>

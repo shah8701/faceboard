@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="Email" table="Email"  lazy="false">
+    <id name="AutoId" column="AutoId" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="UserName" column="UserName"  />
+    <property name="Password" column="Password"  />
+    <property name="IsUsed" column="IsUsed"  />
+  
+  </class>
+
+</hibernate-mapping>

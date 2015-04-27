@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+	namespace="faceboardpro.Domain" assembly="faceboardpro">
+  <class name="FanPagePost" table="FanPagePost"  lazy="false">
+    <id name="AutoId" column="AutoId" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="FriendId" column="FriendId"  />
+    <property name="Status" column="Status"  />
+    <property name="Level" column="Level"  />
+    <property name="Date" column="Date"  />
+    <property name="MainPageUrl" column="MainPageUrl"  />
+
+  </class>
+</hibernate-mapping>
