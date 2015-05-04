@@ -30,7 +30,7 @@ Basic Features:
 **Friends Management:** The friend management option provide 3 features: request friends, accept/cancel friend request and invite friends. You can add targeted friends in your account. Targeting can be also done based on Geo-Location or from fan pages. You can send friend request via name, locations, profile URLs or Fanpage URLs. You can also upload mobile number or email_ID of your send him/her an invite.
 
 
-![](http://i.imgur.com/Wo3YAO1.png)
+![](http://i.imgur.com/No4IwAU.png)
 
 
 **Page Management:** This feature let you automatically manage Facebook fan pages, like and comment on a targeted post; even you can upload videos, post messages on your own Facebook pages and targeted fan page. Also you can create gate for your fans to encourage them to like your page. You can also load other fanpages, even if you’re not a member of that group. There are other features too like load fanpage messages, fanpage comments and load friends URLs.
