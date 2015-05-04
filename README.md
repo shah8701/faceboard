@@ -24,7 +24,7 @@ Basic Features:
 **Accounts Management:** This is one of the most advanced feature of faceboardpro. You can upload, multiple accounts, monitor active and inactive accounts, friends and followers, of your Facebook accounts in a single click. You can also change your profile name and language of the uploaded account.
 
 
-![](http://i.imgur.com/lKmZghV.png)
+![](http://i.imgur.com/TWTz6wr.png)
 
 
 **Friends Management:** The friend management option provide 3 features: request friends, accept/cancel friend request and invite friends. You can add targeted friends in your account. Targeting can be also done based on Geo-Location or from fan pages. You can send friend request via name, locations, profile URLs or Fanpage URLs. You can also upload mobile number or email_ID of your send him/her an invite.
