@@ -66,7 +66,7 @@ Basic Features:
 **Photos Management:** Well, this feature is the most amazing one! And you can’t deny this. This feature allow you to download the Photo and tag your friend name on that photo. You can also set the amount of friends you want to tag.  You can tag the targeted audience to grab the attention as well as download a complete album of a Facebook fanpage.
 
 
-![](http://i.imgur.com/czFvXkW.png)
+![](http://i.imgur.com/nDtInRD.png)
 
 
 **Scraper Management:** Wow awesome feature to give you data related to your niche and will provide you targeted audience.
@@ -74,5 +74,13 @@ Get data with complete bio of fan page members, Events Members, Groups Members, 
 
 
 ![](http://i.imgur.com/I5lBzGK.png)
+
+
+Devices and Platforms : 
+=========================
+faceboardpro is available on web, desktop and mobiles. We have Android and iOS apps which work in tandem with the web app.
+=========================
+
+Build Instructions
 
 
