@@ -1,2 +1,2 @@
-# facedominator
-Git for Facedominator
+# faceboard
+Git for Faceboard
